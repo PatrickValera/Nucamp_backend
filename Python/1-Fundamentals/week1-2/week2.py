@@ -1,8 +1,18 @@
-stars = ""
-for i in range(0, 5, 1):
-    for j in range(0, i, 1):
-        stars = stars + "*"
-    print(stars)
+
+# REVERSE NAME
+def reverse(str):
+    return str[::-1]
+name = input("What is your name? ")
+print("Your name reversed is:", reverse(name))
+
+
+# STEPS CHALLENGE =======
+# stars = ""
+# for i in range(0, 5, 1):
+#     for j in range(0, i, 1):
+#         stars = stars + "*"
+#     print(stars)
+
 # FOR LOOP LOADING BAR======
 # for amount_loaded in range(0, 101, 5):
 #     print(amount_loaded)
