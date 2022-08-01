@@ -94,11 +94,11 @@ quicksort(unsorted_list,0,len(unsorted_list)-1)
 print(unsorted_list)'''
 
 # Code Challenge: FizzBuzz
-def fizzbuzz(num):
+'''def fizzbuzz(num):
     for i in range(1,num+1):
         if i%3 == 0 and i%5==0: print("FizzBuzz")
         elif i%3 == 0: print("Fizz")
         elif i%5 == 0: print("Buzz")
         else:print(i)
 
-fizzbuzz(50)
+fizzbuzz(50)'''
