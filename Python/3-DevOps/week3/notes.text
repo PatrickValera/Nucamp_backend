@@ -1,0 +1,6 @@
+CI/CD 
+    - Continuous integration and continuous deployment
+    - Incremental changes and optional automated deployment
+
+Automated can be done with Github action
+    - "jobs" executed "on" event triggers

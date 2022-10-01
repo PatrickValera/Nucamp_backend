@@ -1,0 +1,20 @@
+Methodologies
+1.Agile vs Waterfall 
+    - Agile is continous development in iterations
+    - Waterfall follows a plan setup initially
+2. Kanban vs Scrum
+    - Both are agile methodologies when it comes to proccessing feature backlogs
+    - Scrum uses sprints, usually 2 weeks
+    - Kanban prioritizes one feature before another is processed
+
+Steps to containerizing:
+Add files to a dockerfile
+Build an image from the dockerfile
+Run image to instantiate a container
+
+docker run --rm -d -p 8000:8000/tcp app:latest
+--rm -> kill container when stopped
+-d -> detached mode
+-p [local port]:[container port] -> port mapping
+[image name]:[tag/version] -> name and version of image to be ran
+

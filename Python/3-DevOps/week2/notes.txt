@@ -1,0 +1,31 @@
+Port Mapping
+- 60k+ ports in a system
+- http by default listens to port 80; https to port 443
+- docker run -p 8080:8080 -p 50000:50000 --rm -d --name my_jenkins jenkins/jenkins:lts-jdk11
+    - map multiple ports
+
+Volume (Persist Data)
+- Bind mount vs volume
+- use -v tag when running docker run to check or instantiate a volume
+- Multiple ways to create a volume or bind mount
+- docker volume ls 
+- there are anonymous and named volumes
+
+Networking
+- docker network ls
+- docker run --network=[network_name] [namespace]/[image_name]:[tab/version]
+- docker inspect [network_name] shows containers in that network
+- Each container in the network will have an ipv4 that other containers in the network can connect to
+
+AWS
+- ECR(IMAGE REGISTRY) -> ECS(CONTAINER SERVICE)
+- Lambda - Faas
+- (Service) Event Bridge - to schedule triggers to a Lamda or other services
+- (Service) EAPI Gateway - deploy API endpoints and connect them to lamda functions or other services
+- (Service) EC2 - Elastic Compute Cloud - Deploy servers 
+- AMI - Amazon machine Image - like a container that runs the server
+- (Service) IAM - Identity and Access Management
+
+* chmod 400 [key-name.pem] -> set to read only to be albe to use it later (MAC ONLY)
+13.52.142.200
+- ssh -i priv-key.pem ubuntu@13.52.142.200 
